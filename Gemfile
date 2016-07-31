@@ -30,12 +30,14 @@ gem 'jbuilder', '~> 2.5'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
-gem 'devise'
-gem 'bootstrap-sass'
-gem 'redcarpet'
-gem 'coderay'
-gem 'ace-rails-ap'
-gem 'bootstrap-markdown-editor-rails'
+gem 'devise', '~> 4.2.0'
+gem 'cancancan', '~> 1.15.0'
+gem 'rolify', '~> 5.1.0'
+gem 'bootstrap-sass', '~> 3.3.7'
+gem 'redcarpet', '~> 3.3.4'
+gem 'coderay', '~> 1.1.1'
+gem 'ace-rails-ap', '~> 4.1.0'
+gem 'bootstrap-markdown-editor-rails', '~> 1.2.0'
 gem 'friendly_id', '~> 5.1.0'
 
 group :development, :test do
