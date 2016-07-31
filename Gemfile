@@ -34,6 +34,8 @@ gem 'devise'
 gem 'bootstrap-sass'
 gem 'redcarpet'
 gem 'coderay'
+gem 'ace-rails-ap'
+gem 'bootstrap-markdown-editor-rails'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
