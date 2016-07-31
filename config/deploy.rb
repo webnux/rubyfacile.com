@@ -1,8 +1,13 @@
 # config valid only for current version of Capistrano
 lock '3.4.0'
 
+set :rbenv_type, :user
+set :rbenv_ruby, '2.3.1p112'
+
 set :application, 'rubyfacile'
 set :repo_url, 'git@github.com:webnux/rubyfacile.com.git'
+
+set :passenger_restart_with_touch, true
 
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
