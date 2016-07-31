@@ -1,8 +1,8 @@
 # config valid only for current version of Capistrano
-lock '3.4.0'
+lock '3.4.1'
 
 set :rbenv_type, :user
-set :rbenv_ruby, '2.3.1p112'
+set :rbenv_ruby, '2.3.1'
 
 set :application, 'rubyfacile'
 set :repo_url, 'git@github.com:webnux/rubyfacile.com.git'
@@ -38,6 +38,8 @@ set :linked_dirs, %w{bin log tmp/pids tmp/cache tmp/sockets vendor/bundle public
 
 # Default value for default_env is {}
 # set :default_env, { path: "/opt/ruby/bin:$PATH" }
+
+set :default_env, { path: "/home/deploy/.rbenv/shims:/home/deploy/.rbenv/bin:$PATH" }
 
 # Default value for keep_releases is 5
 # set :keep_releases, 5

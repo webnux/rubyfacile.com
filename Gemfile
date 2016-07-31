@@ -43,7 +43,7 @@ group :development do
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
 
-  gem 'capistrano', '~> 3.4.0'
+  gem 'capistrano', '~> 3.4.1'
   gem 'capistrano-bundler', '~> 1.1.4'
   gem 'capistrano-rails', '~> 1.1.5'
   gem 'capistrano-passenger'
