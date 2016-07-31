@@ -14,3 +14,22 @@
 
 <%= link_to 'Show', @post %> |
 <%= link_to 'Back', posts_path %>
+
+<script src="/js/markdown/codemirror.js"></script>
+<script src="/js/markdown/underscore.js"></script>
+<script src="/js/markdown/marked.js"></script>
+<script src="/js/markdown/dropzone.js"></script>
+<script src="/js/markdown/mdeditor.js"></script>
+
+<script>
+  var md = new MdEditor('#post_content', {
+    uploader: 'upload.php',
+    preview: true,
+    images: [
+      {id: '1.jpg', url: 'http://lorempicsum.com/futurama/200/200/1'},
+      {id: '1.jpg', url: 'http://lorempicsum.com/futurama/200/200/2'},
+      {id: '1.jpg', url: 'http://lorempicsum.com/futurama/200/200/3'},
+      {id: '1.jpg', url: 'http://lorempicsum.com/futurama/200/200/4'}
+    ]
+  });
+</script>
