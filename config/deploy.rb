@@ -41,6 +41,8 @@ set :linked_dirs, %w{bin log tmp/pids tmp/cache tmp/sockets vendor/bundle public
 
 #set :default_env, { path: "/home/deploy/.rbenv/shims:/home/deploy/.rbenv/bin:$PATH" }
 
+set :rbenv_path, '/home/deploy/.rbenv/'
+
 # Default value for keep_releases is 5
 # set :keep_releases, 5
 
