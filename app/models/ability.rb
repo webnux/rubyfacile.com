@@ -12,4 +12,4 @@ class Ability
 end
 
 # https://github.com/CanCanCommunity/cancancan/wiki/Defining-Abilities
-# 
+#
