@@ -12,7 +12,6 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require turbolinks
 //= require ace-rails-ap
 //= require bootstrap-markdown-editor
 //= require bootstrap-sprockets
