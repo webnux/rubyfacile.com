@@ -29,19 +29,12 @@ gem 'jbuilder', '~> 2.5'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
-gem 'devise', '~> 4.2.0'
-gem 'cancancan', '~> 1.15.0'
-gem 'rolify', '~> 5.1.0'
-gem 'bootstrap-sass', '~> 3.3.7'
-gem 'redcarpet', '~> 3.3.4'
-gem 'coderay', '~> 1.1.1'
-gem 'ace-rails-ap', '~> 4.1.0'
-gem 'bootstrap-markdown-editor-rails', '~> 1.2.0'
-gem 'friendly_id', '~> 5.1.0'
-
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platform: :mri
+  gem 'rspec-rails'
+  gem 'capybara'
+  gem 'database_cleaner'
 end
 
 group :development do
@@ -62,3 +55,16 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+
+# Cutom gems
+
+gem 'devise', '~> 4.2.0'
+gem 'cancancan', '~> 1.15.0'
+gem 'rolify', '~> 5.1.0'
+gem 'bootstrap-sass', '~> 3.3.7'
+gem 'redcarpet', '~> 3.3.4'
+gem 'coderay', '~> 1.1.1'
+gem 'ace-rails-ap', '~> 4.1.0'
+gem 'bootstrap-markdown-editor-rails', '~> 1.2.0'
+gem 'friendly_id', '~> 5.1.0'
+gem 'haml', '~> 4.0', '>= 4.0.7'
