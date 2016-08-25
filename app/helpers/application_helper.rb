@@ -3,6 +3,18 @@ module ApplicationHelper
     content_for(:header) { text.to_s }
   end
 
+  def title(text)
+    content_for :title, text
+  end
+
+  def meta_tag(tag, text)
+    content_for :"meta_#{tag}", text
+  end
+
+  def yield_meta_tag(tag, default_text='')
+    content_for?(:"meta_#{tag}") ? content_for(:"meta_#{tag}") : default_text
+  end
+
   class CodeRayify < Redcarpet::Render::HTML
     def block_code(code, language)
       CodeRay.scan(code, language).div
