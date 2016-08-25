@@ -67,4 +67,8 @@ gem 'coderay', '~> 1.1.1'
 gem 'ace-rails-ap', '~> 4.1.0'
 gem 'bootstrap-markdown-editor-rails', '~> 1.2.0'
 gem 'friendly_id', '~> 5.1.0'
-gem 'haml', '~> 4.0', '>= 4.0.7'
+
+
+## to test later
+# gem 'haml', '~> 4.0', '>= 4.0.7'
+# gem 'slim', '~> 3.0', '>= 3.0.7'
